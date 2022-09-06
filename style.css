@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+body {
+    font-family: 'Silkscreen', cursive;
+    user-select: none;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background: black;
+}
+#home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#homeScreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 60px;
+    bottom: 56px;
+    background: url(https://images.wallpaperscraft.ru/image/single/xp_windows_vektor_74137_1600x900.jpg) no-repeat;
+    background-size: cover;
+}
+#taskBar {
+    position: absolute;
+    background-color: rgb(40, 40, 40);
+    opacity: 0.95;
+    width: 100%;
+    height: 56px;
+    bottom: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.taskbar_contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 5px white;
+    box-sizing: border-box;
+    width: 190px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.taskbar_contact:hover {
+    border: solid 4px rgba(72, 88, 212, 0.689);
+    transition: 0.3s;
+}
+.taskbar_service {
+    display: flex;
+    align-items: center
+}
+.taskbar_service-date-time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.taskbar_service-charge-lvl {
+    background: url(pics/free-icon-battery-status-569473-white.png) no-repeat;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+}
+.dark-white {
+    background: url(pics/free-icon-day-and-night-8295056.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.language {
+    cursor: pointer;
+}
+div.taskbar_service .taskbar_service-charge-lvl, div.taskbar_service .dark-white,
+div.taskbar_service .language {
+    margin-right: 15px;
+}
+.card {
+    width: 100px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: center;
+    margin: 15px;
+}
+
+
+    .card__calc {
+        background: url(pics/calculate.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 80px;
+    }
+    .card__paint {
+        background: url(pics/paint.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100px;
+        height: 80px;
+    }
+    .card__git {
+        background: url(pics/github.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100px;
+        height: 80px;
+    }
+    .card__fail {
+        background: url(pics/fails.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100px;
+        height: 80px;
+    }
+    .card__bird {
+        background: url(pics/bird.png) no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 100px;
+        height: 80px;
+    }
+
+.card:hover .text {
+    background: black;
+    color: white;
+}
+a {
+    color: black;
+    text-decoration: none;
+}   
+
+
+.window__inside {
+    top: 50%;   
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 600px;
+    background-color: black;
+    position: fixed;
+    border-radius: 9px 9px 0 0;
+}
+.window__header {
+    border-radius: 9px 9px 0 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(45deg, #3d949c, #8bd6f8);
+    display: flex;
+    flex-direction: row-reverse;
+}
+.window__calc, .window__paint, .window__fail, .window__bird, .window__contact-me {   
+    position: fixed;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.483);
+}
+
+.close, .closeTwo, .closeThree, .closeFour, .closeFive {
+    background: url(pics/close-2.png) no-repeat;
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.close:hover, .closeTwo:hover, .closeThree:hover, .closeFour:hover, .closeFive:hover {
+    filter: brightness(180%);
+}
+
+.list__my-projects {
+    display: grid;
+    grid-template-areas: 
+    'block-projects block-projects block-projects block-projects';
+    justify-content: start;
+    grid-gap: 10px;
+}
+.block-projects {
+    width: 100px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    text-align: center;
+    margin: 15px;
+}
+.projects {
+    background: url(pics/projects.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 90px;
+    height: 90px;
+}
+.text-projects {
+    color: white;
+}
+.block-projects:hover .text-projects {
+    background: white;
+    color: black;
+}
+
+
+
+/* calculate */
+
+.calc {
+    color: white;
+    padding: 20px;
+}
+.calc-screen {
+    height: 110px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: center;
+}
+.calc-screen p {
+    text-align: right;
+    font-size: 55px;
+    margin: 0;
+}
+.buttons {
+    display: grid;
+    grid-template-areas: 
+    "ac plus-minus percent division"
+    "seven eight nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 10px;
+    justify-items: center;
+}
+.btn {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+}
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 10px;
+}
+.btn:hover {
+    filter: brightness(130%);
+}
+.btn:active {
+    filter: brightness(90%);
+}
+
+.btn.bg-grey {
+    background: gray;
+}
+.btn.bg-orange {
+    background: rgb(188, 123, 2);
+}
+
+
+/* paint */
+
+.desk__paint {
+    width: 100%;
+    /* height: calc(100% - 40px); */
+}
+.canvas {
+    width: 1000;
+    height: 500;
+    background-color: white;
+    border: 4px solid gray;
+    box-sizing: border-box;
+}
+.palette {
+    width: 100%;
+    height: 100px;
+    background-color: pink;
+    display: flex;
+}
+.footer__clear {
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(45deg, #37281e, #224758);
+}
+.clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(137, 137, 137);
+    color: black;
+    padding: 10px;
+    width: 200px;
+    border-radius: 0 0 20px 20px;
+    cursor: pointer;
+}
+.clear:hover {
+    filter: brightness(130%);
+    color: black;
+}
+.clear:active {
+    filter: brightness(90%);
+    color: rgb(91, 91, 91);
+}
+.button {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 1px;
+    cursor: pointer;
+    border: solid 1px #fff;
+  }
+   
+  .button:hover {
+    transform: scale(1.5);
+    filter: brightness(130%);
+  }
+   
+  .button:active {
+    transform: scale(1.5);
+    filter: brightness(80%);
+  }
