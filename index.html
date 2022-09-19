@@ -9,36 +9,35 @@
 </head>
 <body>
     <div id="home">
-        <header style="color: white;">Тут могла быть ваша погода fasfasfasf</header>
         <div id="homeScreen">   
             <div class="card block__calc">
                 <a href="#">
                     <div class="card__calc"></div>
-                    <div class="text">calculator</div>
+                    <div class="text">Calculator</div>
                 </a>
             </div>
             <div class="card block__paint">
                 <a href="#">
                     <div class="card__paint"></div>
-                    <div class="text">paint</div>
+                    <div class="text">Paint</div>
                 </a>
             </div>
             <div class="card block__git">
                 <a href="https://github.com/ofwazzup" target="_blank">
                     <div class="card__git"></div>
-                    <div class="text">git hub</div>
+                    <div class="text">Git Hub</div>
                 </a>
             </div>
             <div class="card block__fail">
                 <a href="#">
                     <div class="card__fail"></div>
-                    <div class="text">my project</div>
+                    <div class="text">My project</div>
                 </a>
             </div>
             <div class="card block__bird">
                 <a href="#">
                     <div class="card__bird"></div>
-                    <div class="text">flappy bird</div>
+                    <div class="text">Flappy bird</div>
                 </a>
             </div>
         </div>
@@ -131,6 +130,7 @@
                         <div class="window__header">
                             <div class="closeFour"></div>
                         </div>
+                        <canvas id="canvasSecond" width="1000" height="560"></canvas>
                     </div>
                 </div>
                 <div class="window__contact-me">
@@ -151,8 +151,6 @@
                             <p>In the future, there is a great desire to learn the Python language.</p>
                             <p>I studied 11 school classes, went to preparatory courses in programming. After that, he was engaged in preparing for 
                                 the exam and entering the university. Now I am engaged in filling out a portfolio on Git, training in Web development and self-development.</p>
-                            <p>I am sociable, sociable.
-                                I have been working in a different field for the last year.</p>
                             <p>My GIT: <a style="color: white;" href="https://github.com/ofwazzup" target="_blank">https://github.com/ofwazzup</a></p>
                         </div>
                     </div>
@@ -162,7 +160,7 @@
             <div class="taskbar_service">
                 <div class="taskbar_service-charge-lvl"></div>
                 <div class="dark-white"></div>
-                <div class="language">EN</div>
+                <!-- <div class="language">EN</div> -->
                 <div class="taskbar_service-date-time">
                     <div class="taskbar_service-time"></div>
                     <div class="taskbar_service-date"></div>
@@ -171,8 +169,8 @@
         </footer>
     </div>
     <script src="app.js"></script>
-    <script src="homeScreen/weather.js"></script>
     <script src="homeScreen/calc.js"></script>
     <script src="homeScreen/paint.js"></script>
+    <script src="homeScreen/flappybird.js"></script>
 </body>
 </html>
