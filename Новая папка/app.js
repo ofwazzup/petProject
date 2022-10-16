@@ -76,21 +76,21 @@ closeThree.onclick = function() {
 }
 
 
-let bird = document.querySelector('.window__bird');
-const btnFour = document.querySelector('.block__bird');
-let closeFour = document.getElementsByClassName('closeFour')[0];
+// let bird = document.querySelector('.window__bird');
+// const btnFour = document.querySelector('.block__bird');
+// let closeFour = document.getElementsByClassName('closeFour')[0];
 
-btnFour.onclick = function() {
-    bird.style.display = "block";
-}
-bird.onclick = function() {
-    if(event.target == bird) {
-        bird.style.display = "none";
-    }
-}
-closeFour.onclick = function() {
-    bird.style.display = "none";
-}
+// btnFour.onclick = function() {
+//     bird.style.display = "block";
+// }
+// bird.onclick = function() {
+//     if(event.target == bird) {
+//         bird.style.display = "none";
+//     }
+// }
+// closeFour.onclick = function() {
+//     bird.style.display = "none";
+// }
 
 
 let contactMe = document.querySelector('.window__contact-me');
